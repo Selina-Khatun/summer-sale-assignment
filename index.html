@@ -12,7 +12,7 @@
 
     <!-- tailwind custom color -->
 
-    <!-- <script>
+    <script>
         tailwind.config = {
             theme: {
                 extend: {
@@ -28,7 +28,7 @@
                 }
             }
         }
-    </script> -->
+    </script>
 </head>
 
 <body>
@@ -40,7 +40,8 @@
                 <div class="text-center">
 
                     <h3 class="text-base lg:text-xl font-semibold">---SALE FEVER---</h3>
-                    <h1 class=" text-3xl lg:text-5xl font-bold py-3 lg:py-9">Purchase TK 200 or<br>above & get <span class="text-[#E527B2]">
+                    <h1 class=" text-3xl lg:text-5xl font-bold py-3 lg:py-9">Purchase TK 200 or<br>above & get <span
+                            class="text-[#E527B2]">
                             20% off</span></h1>
                     <div class="flex items-center justify-center gap-2">
                         <p class="text-[#111] text-sm font-semibold">Use Promo Code</p>
@@ -52,32 +53,99 @@
     </section>
     <!-- card section starts from here -->
 
-    <section class="container mx-auto my-20">
-    <!-- grid card area     -->
-<div>
+    <section class="container mx-auto my-20 flex flex-col lg:flex-row gap-4">
+        <!-- grid card area     -->
+        <div class="flex-1">
 
-<div>
-    <h2 class="text-2xl font-bold my-5">Kitchenware</h2>
-    <div class="grid grid-cols-3">
-        <div class="card bg-[#FFF]  shadow-2xl ">
-            <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
-                <img src="/images/prod1.png" alt="Shoes"  />
-              </figure>
-            <div class="card-body items-center text-center">
-               
-              <h2 class="card-title">K. Accessories</h2>
-              <p>39.00 TK</p>
+            <div>
+                <h2 class="text-2xl font-bold my-5">Kitchenware</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="card bg-[#FFF]  shadow-2xl ">
+                        <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
+                            <img src="/images/prod1.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating rating-sm">
+                                <input type="radio" name="rating-2" class="mask mask-star-2  bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2  bg-[#FFC107]" />
+                            </div>
+                            <h2 class="card-title">K. Accessories</h2>
+                            <p>39.00 TK</p>
 
+                        </div>
+                    </div>
+                    <div class="card bg-[#FFF]  shadow-2xl ">
+                        <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
+                            <img src="/images/prod1.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating rating-sm">
+                                <input type="radio" name="rating-2" class="mask mask-star-2  bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2  bg-[#FFC107]" />
+                            </div>
+                            <h2 class="card-title">K. Accessories</h2>
+                            <p>39.00 TK</p>
+
+                        </div>
+                    </div>
+                    <div class="card bg-[#FFF]  shadow-2xl ">
+                        <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
+                            <img src="/images/prod1.png" alt="Shoes" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <div class="rating rating-sm">
+                                <input type="radio" name="rating-2" class="mask mask-star-2  bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2  bg-[#FFC107]" />
+                            </div>
+                            <h2 class="card-title">K. Accessories</h2>
+                            <p>39.00 TK</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div> 
-    </div>
-</div>
 
-</div>
-<!-- Make Purchase area -->
-<div>
+        </div>
+        <!-- Make Purchase area -->
+        <div class="lg:w-1/4">
+            <!-- Have coupon? -->
 
-</div>
+            <div class="shadow-xl rounded-lg mb-10 p-4">
+
+                <h2 class="text-xl font-semibold py-5">Have coupon?</h2>
+                <div class="join ">
+
+                    <input class="input input-bordered join-item w-2/3 " placeholder="Coupon code" />
+                    <button class="btn bg-[#E527B2] join-item rounded-r-full">Apply</button>
+                </div>
+            </div>
+
+
+            <!-- total -->
+            <div class="text-base font-bold relative">
+                <div class="p-10 shadow-xl rounded-lg ">
+                    <hr class="mb-6">
+                    <h5>Total price: <span class="text-gray-300">0.00</span>TK
+                    </h5>
+                    <h5>Discount : <span class="text-gray-300">0.00</span>TK
+                    </h5>
+                    <h5>Total: <span class="text-gray-300">0.00</span>TK</h5>
+                    <hr class="mt-6">
+                </div>
+                <button class="btn btn-secondary px-20 normal-case lg:absolute lg:left-3 lg:-bottom-7 bg-[rgb(229,39,178)]">Make
+                    Purchase</button>
+            </div>
+
+        </div>
     </section>
 </body>
 

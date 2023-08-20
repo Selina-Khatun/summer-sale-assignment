@@ -60,7 +60,8 @@
             <div>
                 <h2 class="text-2xl font-bold my-5">Kitchenware</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
+
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
                         <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod1.png" alt="K. Accessories" />
                         </figure>
@@ -78,7 +79,7 @@
                         </div>
                     </div>
 
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
                         <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod2.png" alt="K. Accessories" />
                         </figure>
@@ -95,7 +96,7 @@
 
                         </div>
                     </div>
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
                         <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod3.png" alt="Home Cooker" />
                         </figure>
@@ -119,7 +120,7 @@
             <div>
                 <h2 class="text-2xl font-bold my-5">Sportswear</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
                         <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod4.png" alt="Sports Back Cap" />
                         </figure>
@@ -136,7 +137,7 @@
 
                         </div>
                     </div>
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
                         <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod5.png" alt="Full Jersey Set" />
                         </figure>
@@ -153,7 +154,7 @@
 
                         </div>
                     </div>
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
                         <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod6.png" alt="Home Cooker" />
                         </figure>
@@ -177,7 +178,7 @@
             <div>
                 <h2 class="text-2xl font-bold my-5">Furniture</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
                         <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod7.png" alt="Single Relax Chair" />
                         </figure>
@@ -194,7 +195,7 @@
 
                         </div>
                     </div>
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6">
                         <figure class="p-10 w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod8.png" alt="Children play" />
                         </figure>
@@ -211,7 +212,7 @@
 
                         </div>
                     </div>
-                    <div class="card bg-[#FFF]  shadow-2xl lg:h-5/6 ">
+                    <div onclick="handleClick(this)" class="card bg-[#FFF]  shadow-2xl lg:h-5/6 ">
                         <figure class="p-10  w-11/12 mt-4 mx-auto rounded-xl bg-[#F3F3F3]">
                             <img src="/images/prod9.png" alt="Flexible Sofa" />
                         </figure>
@@ -251,6 +252,8 @@
             <!-- total -->
             <div class="text-base font-bold relative">
                 <div class="p-5 shadow-xl rounded-lg md:text-center lg:text-start  ">
+
+                    <div class="selected-item" id="selected-item"></div>
                     <hr class="mb-6">
                     <h5>Total price: <span class="text-gray-300">0.00</span>TK
                     </h5>
@@ -267,6 +270,7 @@
 
         </div>
     </section>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

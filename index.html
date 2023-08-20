@@ -29,6 +29,9 @@
             }
         }
     </script>
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -243,11 +246,11 @@
                 <h2 class="text-xl font-semibold py-5">Have coupon?</h2>
                 <div class="join ">
 
-                    <input class="input input-bordered join-item w-2/3 " placeholder="Coupon code" />
-                    <button class="btn bg-[#E527B2] join-item rounded-r-full">Apply</button>
+                    <input id="coupon-code" class="input input-bordered join-item w-2/3 " placeholder="Coupon code" />
+                    <button id="apply-button" class="btn bg-[#E527B2] normal-case join-item rounded-r-full "    disabled >Apply</button>
                 </div>
             </div>
-
+<!-- btn-disabled   style="background-color: #ec68c9; color: white;"-->
 
             <!-- total -->
             <div class="text-base font-bold relative">
@@ -257,11 +260,12 @@
                     <hr class="mb-6">
                     <h5 >Total price: <span class="text-gray-300" id="total-price">0.00</span>TK
                     </h5>
-                    <h5>Discount : <span class="text-gray-300">0.00</span>TK
+                    <h4 id="total-amount"></h4>
+                    <h5>Discount : <span class="text-gray-300" id="Discounted">0.00</span>TK
                     </h5>
-                    <h5>Total: <span class="text-gray-300">0.00</span>TK</h5>
+                    <h5>Total: <span class="text-gray-300" id="total">0.00</span>TK</h5>
                     <hr class="my-6">
-                    <button class="btn btn-secondary  w-11/12 normal-case lg:absolute lg:left-3 lg:-bottom-7 bg-[rgb(229,39,178)]">Make
+                    <button class="btn btn-secondary w-11/12 normal-case lg:absolute lg:left-3 lg:-bottom-7 bg-[rgb(229,39,178)]">Make
                         Purchase</button>
                    
                 </div>
@@ -271,6 +275,7 @@
         </div>
     </section>
     <script src="./js/index.js"></script>
+    <script src="./js/button.js"></script>
 </body>
 
 </html>

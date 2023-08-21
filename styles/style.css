@@ -1,15 +1,13 @@
-
-#purchase,#apply-button {
+#purchase,
+#apply-button {
     color: white;
-    background-color: #f66dd1;
 
 }
 
 #apply-button:hover {
-    background-color: #E527B2;
+    background-color: #c70794;
 }
+
 #purchase:hover {
-    background-color: #E527B2;
+    background-color: #c70794;
 }
-
-

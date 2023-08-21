@@ -17,7 +17,7 @@ function handleClick(target) {
 
     const applyButton = document.getElementById("apply-button");
     applyButton.disabled = totalPrice < 200;
-    
+    // applyButton.style.cursor="not-allowed"
     const purchaseButton = document.getElementById("purchase");
     purchaseButton.disabled = totalPrice < 0;
 
@@ -28,8 +28,9 @@ function handleClick(target) {
             discountedTotal = (totalAmount * discount).toFixed(2);
             document.getElementById("Discounted").innerText = discountedTotal;
             const total = totalAmount - (totalAmount * discount).toFixed(2);
-            document.getElementById("total").innerText = total;
+          document.getElementById("total").innerText = total;
             couponCodeInput.value = ' ';
+            
             
         }
     });
@@ -38,19 +39,27 @@ function handleClick(target) {
 function goHome() {
 
     window.Location.href = "http://127.0.0.1:5500/index.html";
-    document.getElementById("total-price").innerText = "0.00";
-    document.getElementById("Discounted").innerText = "0.00";
-    document.getElementById("total").innerText = "0.00";
-    document.getElementById("selected-item").innerText = " ";
-    const purchaseButton = document.getElementById("purchase");
-    purchaseButton.disabled=true;
-    // purchaseButton.style.backgroundColor='#E527B2';
-    const applyButton = document.getElementById("apply-button");
-    applyButton.disabled =true;
+   
+    window.location.reload()
 
 }
+const applyButton = document.getElementById("apply-button");
+const purchaseButton = document.getElementById("purchase");
 
+function disabledButtonStyle(){
+    disabledButtonStyle(applyButton);
+    disabledButtonStyle(purchaseButton);
+}
 
+function disabledButtonStyle(button){
+if(button.disabled){
+    button.style.backgroundColor="#E527B2"; 
+    button.style.cursor="pointer";
+}else{
+    button.style.backgroundColor="#E527B2"; 
+    button.style.cursor= "not-allowed"; 
+}
+}
 
 
 

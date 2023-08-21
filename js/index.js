@@ -43,6 +43,8 @@ function goHome() {
     window.location.reload()
 
 }
+//* disabled Button Style starts from here *//
+
 const applyButton = document.getElementById("apply-button");
 const purchaseButton = document.getElementById("purchase");
 
@@ -60,6 +62,6 @@ if(button.disabled){
     button.style.cursor= "not-allowed"; 
 }
 }
-
+disabledButtonStyle();
 
 
